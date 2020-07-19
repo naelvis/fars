@@ -19,4 +19,4 @@ Suggests:
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)
-Imports: dplyr, graphics, maps, readr, tidyr
+Imports: dplyr, graphics, maps, readr, tidyr, testthat
