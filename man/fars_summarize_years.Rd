@@ -18,6 +18,8 @@ This function can be used to obtain the number of accidents per month for severa
 years, selected via the \code{years} parameter.
 }
 \examples{
+\dontrun{
 fars_summarize_years(list(2014,2015))
+}
 
 }

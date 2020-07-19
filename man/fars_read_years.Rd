@@ -21,6 +21,8 @@ in the package. The packages to which the function will be applied are selected 
 the the argument \code{years}.
 }
 \examples{
+\dontrun{
 fars_read_year(list(2014,2015))
+}
 
 }

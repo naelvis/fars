@@ -18,6 +18,8 @@ This function can be used to import a dataset in .csv format. The file name
 needs to be provided via the \code{filename} argument.
 }
 \examples{
+\dontrun{
 fars_read("accident_2015.csv.bz2")
+}
 
 }

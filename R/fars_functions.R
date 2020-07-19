@@ -12,7 +12,9 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2015.csv.bz2")
+#' }
 #'
 fars_read <- function(filename) {
   if(!file.exists(filename))
@@ -35,7 +37,9 @@ fars_read <- function(filename) {
 #' if the input cannot be coerced to an integer.
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2015)
+#' }
 #'
 #' @export
 make_filename <- function(year) {
@@ -60,7 +64,9 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_year(list(2014,2015))
+#' }
 #'
 fars_read_years <- function(years) {
   lapply(years, function(year) {
@@ -90,7 +96,9 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(list(2014,2015))
+#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {
@@ -120,7 +128,9 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(1,2015)
+#' }
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

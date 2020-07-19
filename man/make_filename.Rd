@@ -19,6 +19,8 @@ in this package, providing an year via the \code{year} argument. The according
 file name is produced.
 }
 \examples{
+\dontrun{
 make_filename(2015)
+}
 
 }

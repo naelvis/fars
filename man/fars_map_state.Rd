@@ -22,6 +22,8 @@ accident in a given year. The state is selected via the \code{state.num} argumen
 the year through the \code{year} aergument.
 }
 \examples{
+\dontrun{
 fars_map_state(1,2015)
+}
 
 }
