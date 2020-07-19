@@ -12,7 +12,9 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2015")
+#' }
 #'
 fars_read <- function(filename) {
   data <- data(filename)

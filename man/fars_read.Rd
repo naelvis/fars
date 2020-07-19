@@ -19,7 +19,7 @@ needs to be provided via the \code{filename} argument.
 }
 \examples{
 \dontrun{
-fars_read("accident_2015.csv.bz2")
+fars_read("accident_2015")
 }
 
 }
