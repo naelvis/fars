@@ -8,7 +8,7 @@ Authors@R:
            email = "n.fornasin@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Please see the vignette for details on this beautiful package. It analyses data on car accidents.
-License: `use_mit_license()`
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
