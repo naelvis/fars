@@ -12,17 +12,13 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
-#' \dontrun{
-#' fars_read("accident_2015.csv.bz2")
-#' }
+#' fars_read("accident_2015")
 #'
 fars_read <- function(filename) {
-  if(!file.exists(filename))
-    stop("file '", filename, "' does not exist")
-  data <- suppressMessages({
-    readr::read_csv(filename, progress = FALSE)
-  })
+  data <- data(filename)
   dplyr::tbl_df(data)
+  if(is.null(data))
+    stop("file '", filename, "' does not exist")
 }
 
 #' Produce name of a dataset given an year
