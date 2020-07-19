@@ -1,0 +1,54 @@
+---
+title: "Introduction"
+author: "Nelvis Fornasin"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fars)
+```
+
+# Concept
+
+This completely legitimate package is totally not an assignment by a renowned online teaching platform. It is in fact a very useful package that not only provides data regarding car accidents in the USA for the years 2013, 2014 and 2015, but also comes with several functions that analyse the datasets and summarise them.
+
+# Using the package
+
+## Importing the datasets
+
+Does importing datasets really scare you?
+Do strange file extensions make you angry?
+Are you frustrated by typos in long file name?
+
+Then leave your fright, anger issues and frustration aside - this package has got your back. The *fars_read_years* function takes in input a list of years (not more than three, anyway) and outputs the corresponding datasets. Neat, right? To import the dataset for 2013 you'd need to type something like this:
+```{r eval = FALSE}
+fars_read_years(2013)
+```
+Whereas for 2014 the code would need to be totally different. Of course I'm joking. This is a serious package.
+
+## Analyzing the data
+
+You imported the dataset - now what? You could make some analysis of your own, but we figured we could provide already for something we did, and maybe it's already what you need. Or maybe you just need to send it to somebody who won't look at it closely anyway.
+
+We offer data analysis in two flavours:
+
+1. **Quick and dirty**. Just use the function *fars_summarize_years*, put some years in input and get a monthly data breakdown. Ever wondered if there are more accidents in January or February? Wonder no more;
+
+2. **Long and graphic**. Unleash *fars_map_state* upon a state number and an year to get a map of the state with the distribution of accidents over the territory - each accidet a dot. Ohio included.
+
+# Conclusion
+
+This revolutionary package answer many questions that modern data scientists cannot avoid asking themselves, such as "Should I really drive through New Jersey?", "Did I mispell package name?", "Were there more car accidents in West or East Montana in 2015?". The latter has been known to keep experts and entusiasts awake at night, desperate for answer.
+Despair no more: *fars* is here.
